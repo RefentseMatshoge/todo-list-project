@@ -13,7 +13,7 @@ function addTask() {
     
     li.innerHTML = `
     <span onclick="this.style.textDecoration='line-through';
-                   this.style.color='gray';">
+                   this.style.color='gray'; this.style.fontStyle='italic';">
         ${task}
     </span>
     <button onclick="this.parentElement.remove()">Delete</button>
