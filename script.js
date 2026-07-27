@@ -12,13 +12,12 @@ function addTask() {
     let li = document.createElement("li");
     
     li.innerHTML = `
-    <span onclick="this.style.textDecoration='line-through';
-                   this.style.color='gray'; this.style.fontStyle='italic';">
+    <span onclick="this.style.textDecoration='line-through'; this.style.color='gray'; this.style.fontStyle='italic';">
         ${task}
     </span>
     <button onclick="this.parentElement.remove()">Delete</button>
-    `;
-
+`;
+    
     taskList.appendChild(li);
 
     taskInput.value = "";
