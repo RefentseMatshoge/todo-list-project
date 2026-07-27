@@ -11,9 +11,10 @@ function addTask() {
 
     let li = document.createElement("li");
     li.innerHTML = `
-        ${task}
-        <button onclick="this.parentElement.remove()">Delete</button>
-    `;
+    ${task}
+    <button onclick="this.parentElement.remove()">Delete</button>
+`;
+
 
     taskList.appendChild(li);
 
